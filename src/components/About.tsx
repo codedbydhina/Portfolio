@@ -34,9 +34,9 @@ export function About() {
                   ["Focus", "Full stack Development & AI "],
                   ["Currently", "Open to Software Engineering Opportunities"],
                 ].map(([k, v]) => (
-                  <div key={k} className="flex items-baseline justify-between border-b border-border pb-3">
-                    <dt className="text-[13px] uppercase tracking-wider text-subtle">{k}</dt>
-                    <dd className="text-[15px] font-medium text-foreground">{v}</dd>
+                  <div key={k} className="flex items-baseline justify-between border-b border-border pb-3 max-md:grid max-md:grid-cols-[110px_minmax(0,1fr)] max-md:justify-normal">
+                    <dt className="text-[13px] uppercase tracking-wider text-subtle max-md:shrink-0 max-md:whitespace-nowrap">{k}</dt>
+                    <dd className="text-[15px] font-medium text-foreground max-md:min-w-0 max-md:text-left max-md:whitespace-normal max-md:break-words">{v}</dd>
                   </div>
                 ))}
               </dl>
