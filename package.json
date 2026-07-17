@@ -2,6 +2,7 @@
   "name": "my-project",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@9.15.9",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -26,10 +27,5 @@
     "tailwindcss": "^4.3.3",
     "typescript": "5.7.3",
     "vite": "^8.1.5"
-  },
-  "pnpm": {
-    "overrides": {
-      "hono": "4.12.25"
-    }
   }
 }
