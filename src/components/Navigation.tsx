@@ -253,7 +253,7 @@ export function Navigation() {
           <span className="grid h-7 w-7 place-items-center rounded-lg bg-foreground text-[13px] font-semibold text-background font-heading">
             P
           </span>
-          <span className="hidden text-sm font-medium tracking-tight sm:block">
+          <span className="block text-[13px] font-medium tracking-tight sm:text-sm">
             Dhinakaran
           </span>
         </a>

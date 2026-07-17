@@ -46,37 +46,30 @@ export function Experience() {
                           "rounded-[18px] border border-border bg-card p-6 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_16px_40px_-16px_rgba(0,0,0,0.14)]",
                         )}
                       >
-                        <div
-                          className={cn(
-                            "grid grid-cols-[minmax(0,1fr)_auto] items-baseline gap-4",
-                            left
-                              ? "md:grid-cols-[auto_minmax(0,1fr)]"
-                              : "",
-                          )}
-                        >
-                          {left && (
-                            <span className="order-2 font-mono text-[12px] tabular-nums text-subtle md:order-1">
+                        <div className="w-full min-w-0">
+                          <div
+                            className={cn(
+                              "flex flex-col items-start gap-3 md:flex-row md:flex-wrap md:justify-between",
+                              left && "md:flex-row-reverse md:text-right",
+                            )}
+                          >
+                            <div className="min-w-0 flex-1">
+                              <h3 className="font-heading text-[18px] font-semibold tracking-tight">
+                                {exp.company}
+                              </h3>
+                              <p className="mt-1 text-[14px] font-medium text-accent">
+                                {exp.role}
+                              </p>
+                            </div>
+                            <span className="shrink-0 whitespace-nowrap font-mono text-[12px] tabular-nums text-subtle">
                               {exp.period}
                             </span>
-                          )}
-                          <div className={cn("min-w-0", left && "order-1 md:order-2")}>
-                            <h3 className="font-heading text-[18px] font-semibold tracking-tight">
-                              {exp.company}
-                            </h3>
-                            <p className="mt-1 text-[14px] font-medium text-accent">
-                              {exp.role}
-                            </p>
-                            <ul className="mt-3 list-disc space-y-2 pl-5 text-left text-[14px] leading-relaxed text-muted">
-                              {exp.description.map((item, index) => (
-                                <li key={index}>{item}</li>
-                              ))}
-                            </ul>
                           </div>
-                          {!left && (
-                            <span className="font-mono text-[12px] tabular-nums text-subtle">
-                              {exp.period}
-                            </span>
-                          )}
+                          <ul className="mt-3 w-full min-w-0 list-disc space-y-2 pl-5 text-left text-[14px] leading-relaxed text-muted whitespace-normal [overflow-wrap:break-word]">
+                            {exp.description.map((item, index) => (
+                              <li key={index} className="w-full min-w-0 break-words whitespace-normal [overflow-wrap:break-word]">{item}</li>
+                            ))}
+                          </ul>
                         </div>
                       </div>
                     </Reveal>
