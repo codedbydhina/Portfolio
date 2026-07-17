@@ -278,7 +278,7 @@ export function Navigation() {
 
         <div className="relative z-10 flex items-center gap-2">
           <a
-            href="Dhinakarann.pdf/resume"
+            href="Dhinakarann.pdf"
             className="group hidden h-10 items-center gap-1.5 rounded-[12px] bg-foreground px-4 text-[14px] font-medium text-background shadow-none transition-[transform,box-shadow] duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 hover:shadow-[0_8px_18px_rgba(15,23,42,0.22)] sm:inline-flex"
           >
             Resume
