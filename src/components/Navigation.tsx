@@ -229,7 +229,7 @@ export function Navigation() {
         className={cn(
           "relative isolate flex w-full max-w-[1180px] items-center justify-between overflow-hidden rounded-[18px] border border-[rgba(255,255,255,0.55)] bg-[rgba(255,255,255,0.72)] px-3 py-2.5 shadow-[0_10px_40px_rgba(15,23,42,0.06)] [backdrop-filter:blur(20px)] [-webkit-backdrop-filter:blur(20px)] transition-[background-color,box-shadow,backdrop-filter] duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] will-change-transform before:pointer-events-none before:absolute before:inset-x-5 before:top-0 before:z-[1] before:h-px before:bg-white/70",
           scrolled &&
-            "bg-[rgba(255,255,255,0.80)] shadow-[0_12px_44px_rgba(15,23,42,0.08)] [backdrop-filter:blur(24px)] [-webkit-backdrop-filter:blur(24px)]",
+          "bg-[rgba(255,255,255,0.80)] shadow-[0_12px_44px_rgba(15,23,42,0.08)] [backdrop-filter:blur(24px)] [-webkit-backdrop-filter:blur(24px)]",
         )}
       >
         <span
@@ -278,7 +278,7 @@ export function Navigation() {
 
         <div className="relative z-10 flex items-center gap-2">
           <a
-            href="/Dhinakaran.pdf"
+            href="/resume"
             className="group hidden h-10 items-center gap-1.5 rounded-[12px] bg-foreground px-4 text-[14px] font-medium text-background shadow-none transition-[transform,box-shadow] duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 hover:shadow-[0_8px_18px_rgba(15,23,42,0.22)] sm:inline-flex"
           >
             Resume
@@ -321,7 +321,7 @@ export function Navigation() {
               </button>
             ))}
             <a
-              href="/Dhinakaran.pdf"
+              href="/resume"
               className="mt-1 flex items-center justify-between rounded-xl bg-foreground px-4 py-3 text-[15px] font-medium text-background"
             >
               Resume
